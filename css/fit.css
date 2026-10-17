@@ -28,6 +28,14 @@ label {
   }
 }
 
+.mobile-menu summary {
+  list-style: none;
+}
+
+.mobile-menu summary::-webkit-details-marker {
+  display: none;
+}
+
 .catalog-nav {
   width: 100%;
   max-width: 100%;
