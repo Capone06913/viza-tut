@@ -191,9 +191,8 @@
   <section class="relative flex h-screen min-h-[700px] items-end overflow-hidden">
     <div class="absolute inset-0">
       <div class="absolute inset-0 z-10 bg-gradient-to-r from-black/75 via-black/40 to-black/15"></div>
-      <video id="hero-video" autoplay loop muted playsinline preload="auto" class="h-full w-full object-cover">
-        <source src="https://videos.pexels.com/video-files/17778054/17778054-hd_1920_1080_30fps.mp4" type="video/mp4">
-      </video>
+      <video id="hero-video" muted playsinline webkit-playsinline loop preload="none" poster="media/28544989.jpg" data-src="https://videos.pexels.com/video-files/17778054/17778054-hd_1920_1080_30fps.mp4" class="absolute inset-0 h-full w-full object-cover"></video>
+      <img src="media/28544989.jpg" alt="" class="hero-still absolute inset-0 h-full w-full object-cover transition-opacity duration-700">
     </div>
     <div class="relative z-20 w-full px-4 pb-28 sm:px-8 md:px-14 md:pb-32 lg:px-20 lg:pb-36">
       <h1 class="font-display text-[56px] font-bold uppercase leading-[0.92] text-white drop-shadow-lg sm:text-[76px] lg:text-[92px]">Виза<br>в Таиланд</h1>
@@ -514,5 +513,6 @@
     const navMenu = document.getElementById('mobile-menu');
     if (navBtn && navMenu) navBtn.addEventListener('click', () => navMenu.classList.toggle('hidden'));
 </script>
+  <script src="js/hero-video.js"></script>
 </body>
 </html>
