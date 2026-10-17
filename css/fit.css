@@ -36,6 +36,36 @@ label {
   display: none;
 }
 
+.place-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(18, 17, 16, 0.72) 0%, rgba(18, 17, 16, 0.28) 26%, rgba(18, 17, 16, 0) 58%);
+}
+
+.place-card > h3,
+.place-card > div {
+  z-index: 2;
+}
+
+.place-kicker {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  margin-bottom: 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(197, 168, 128, 0.55);
+  background: rgba(18, 17, 16, 0.45);
+  padding: 0.28rem 0.7rem;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #c5a880;
+}
+
 .catalog-nav {
   width: 100%;
   max-width: 100%;

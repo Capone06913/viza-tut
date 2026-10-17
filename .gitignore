@@ -2,3 +2,5 @@ prajs.html
 memory/site.env.local
 .cursor/excalibur-blog-handoff.md
 .cursor/excalibur-blog-fragments/
+__pycache__/
+*.pyc

@@ -1,0 +1,415 @@
+{
+  "site_url": "https://capone06913.github.io/viza-tut/",
+  "comment": "Правьте этот файл: адрес сайта, title, description, index. Потом: python scripts/apply_seo.py",
+  "pages": [
+    {
+      "file": "agentstvam.html",
+      "path": "agentstvam.html",
+      "index": true,
+      "title": "Визы для турагентств — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.4",
+      "lastmod": "2026-10-17",
+      "description": "Пакеты для турагентств: несколько заявителей, один менеджер, статус по каждому делу. Условия после объёма. Офис в Москве."
+    },
+    {
+      "file": "avstraliya.html",
+      "path": "avstraliya.html",
+      "index": true,
+      "title": "Виза в Австралию для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Нужна ли виза в Австралию: да, она электронная. Срок зависит от прошлых виз. Анкету готовим в Москве и удалённо."
+    },
+    {
+      "file": "bankovskaya-karta.html",
+      "path": "bankovskaya-karta.html",
+      "index": true,
+      "title": "Карта для оплаты визы и отеля — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Международная карта, если российской нельзя оплатить отель, визу или билет. Выпуск зависит от банка. Карту заранее не обещаем."
+    },
+    {
+      "file": "bilet.html",
+      "path": "bilet.html",
+      "index": true,
+      "title": "Бронь авиабилетов для визы — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Бронь авиабилетов для визы: маршрут и даты, которые можно показать консульству. Это не купленный билет, если выкуп не нужен."
+    },
+    {
+      "file": "blog-novost.html",
+      "path": "blog-novost.html",
+      "index": false,
+      "title": "Заголовок новости — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.1",
+      "lastmod": "2026-10-17",
+      "description": "Шаблон новости в блоге «Виза тут»."
+    },
+    {
+      "file": "blog-zametka.html",
+      "path": "blog-zametka.html",
+      "index": false,
+      "title": "Заголовок заметки — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.1",
+      "lastmod": "2026-10-17",
+      "description": "Шаблон заметки в блоге «Виза тут»."
+    },
+    {
+      "file": "blog.html",
+      "path": "blog.html",
+      "index": true,
+      "title": "Блог: документы и загранпаспорт — Виза тут",
+      "changefreq": "weekly",
+      "priority": "0.7",
+      "lastmod": "2026-10-17",
+      "description": "Документы на шенген и проверка загранпаспорта перед подачей. Офис в Москве."
+    },
+    {
+      "file": "bolgariya.html",
+      "path": "bolgariya.html",
+      "index": true,
+      "title": "Виза в Болгарию для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Нужна ли виза в Болгарию и как проходит личная подача. Пакет собираем заранее. Москва и удалённо по России."
+    },
+    {
+      "file": "franciya.html",
+      "path": "franciya.html",
+      "index": true,
+      "title": "Виза во Францию для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Документы и запись на визу во Францию. Подача для россиян в 2026. Офис в Москве, сканы принимаем из другого города."
+    },
+    {
+      "file": "greciya.html",
+      "path": "greciya.html",
+      "index": true,
+      "title": "Виза в Грецию для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Нужна ли виза в Грецию: да, это шенген. Документы под цель поездки. Готовим в Москве и удалённо по России."
+    },
+    {
+      "file": "index.html",
+      "path": "",
+      "index": true,
+      "title": "Шенгенская виза и загранпаспорт в 2026 — Виза тут",
+      "changefreq": "weekly",
+      "priority": "1.0",
+      "lastmod": "2026-10-17",
+      "description": "Визы для россиян в 2026: шенген, Китай, Япония, США. Загранпаспорт и документы к подаче. Офис в Москве, пакет готовим удалённо по России."
+    },
+    {
+      "file": "indiya.html",
+      "path": "indiya.html",
+      "index": true,
+      "title": "Виза в Индию для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Электронная виза в Индию и стикер в паспорт — разные процедуры. Формат смотрим по паспорту и сроку. Москва и удалённо."
+    },
+    {
+      "file": "ispaniya.html",
+      "path": "ispaniya.html",
+      "index": true,
+      "title": "Виза в Испанию для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Нужна ли виза в Испанию в 2026 и сколько стоит подача в Москве. Список документов зависит от цели поездки."
+    },
+    {
+      "file": "italiya.html",
+      "path": "italiya.html",
+      "index": true,
+      "title": "Виза в Италию для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Нужна ли виза в Италию и какие документы собрать. Подача в Москве, анкету готовим удалённо. Консульский сбор отдельно."
+    },
+    {
+      "file": "kak-rabotaem.html",
+      "path": "kak-rabotaem.html",
+      "index": true,
+      "title": "Как идёт дело — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.5",
+      "lastmod": "2026-10-17",
+      "description": "Сначала цель поездки, потом паспорт и анкета, потом договор. Решение консульства не обещаем. Офис в Москве."
+    },
+    {
+      "file": "kanada.html",
+      "path": "kanada.html",
+      "index": true,
+      "title": "Виза в Канаду для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Нужна ли виза в Канаду и как её получают. Срок визы не длиннее паспорта. Подготовка в Москве, сбор отдельно."
+    },
+    {
+      "file": "karta-ates.html",
+      "path": "karta-ates.html",
+      "index": true,
+      "title": "Карта АТЭС: как получить — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Карта АТЭС для деловых поездок. Это не виза. Смотрим, подходите ли вы, и собираем пакет. Офис в Москве."
+    },
+    {
+      "file": "kipr.html",
+      "path": "kipr.html",
+      "index": true,
+      "title": "Виза на Кипр для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Нужна ли виза на Кипр в 2026. Отдельный пакет, не обычный шенген. Офис в Москве, документы можно прислать удалённо."
+    },
+    {
+      "file": "kitay.html",
+      "path": "kitay.html",
+      "index": true,
+      "title": "Виза в Китай для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Нужна ли виза в Китай в 2026, зависит от маршрута и срока. Пакет под самостоятельную поездку или приглашение. Москва и удалённо."
+    },
+    {
+      "file": "kontakty.html",
+      "path": "kontakty.html",
+      "index": true,
+      "title": "Контакты — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.5",
+      "lastmod": "2026-10-17",
+      "description": "Офис в Москве: Большая Полянка 42, строение 1, 4 этаж, офис 426. Будни 10:00–18:00. Телефон +7 (495) 662-98-99."
+    },
+    {
+      "file": "novaya-zelandiya.html",
+      "path": "novaya-zelandiya.html",
+      "index": true,
+      "title": "Виза в Новую Зеландию для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Нужна ли виза в Новую Зеландию. Электронная виза, решение приходит на почту после сбора. Готовим в Москве и удалённо."
+    },
+    {
+      "file": "otel.html",
+      "path": "otel.html",
+      "index": true,
+      "title": "Бронь отеля для визы — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Бронь отеля для визы: адреса и даты под пакет. Весь маршрут вперёд не выкупаем, если консульству хватает брони."
+    },
+    {
+      "file": "pasport-bio.html",
+      "path": "pasport-bio.html",
+      "index": true,
+      "title": "Биометрический загранпаспорт на 10 лет — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Загранпаспорт нового образца: отпечатки сдают лично. Анкету и запись готовим заранее. Офис в Москве, пошлина отдельно."
+    },
+    {
+      "file": "pasport-rebenku.html",
+      "path": "pasport-rebenku.html",
+      "index": true,
+      "title": "Загранпаспорт ребёнку до 14 лет — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Нужен ли ребёнку загранпаспорт и кто подаёт. Согласие второго родителя разбираем до записи. Офис в Москве."
+    },
+    {
+      "file": "pasport-rf.html",
+      "path": "pasport-rf.html",
+      "index": true,
+      "title": "Замена паспорта РФ срочно — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Замена паспорта гражданина РФ по возрасту, порче или при утере. Срок и цену подтверждаем после проверки. Офис в Москве."
+    },
+    {
+      "file": "pasport-staryy.html",
+      "path": "pasport-staryy.html",
+      "index": true,
+      "title": "Загранпаспорт старого образца на 5 лет — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Загранпаспорт на 5 лет, если биометрия не нужна или не проходит. Срок и пошлину называем после проверки. Москва и удалённо."
+    },
+    {
+      "file": "prajs.html",
+      "path": "prajs.html",
+      "index": false,
+      "title": "Калькулятор дохода — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.1",
+      "lastmod": "2026-10-17"
+    },
+    {
+      "file": "shengen.html",
+      "path": "shengen.html",
+      "index": true,
+      "title": "Шенгенская виза для россиян в 2026 — Виза тут",
+      "changefreq": "weekly",
+      "priority": "0.9",
+      "lastmod": "2026-10-17",
+      "description": "Как получить шенгенскую визу в 2026: Италия, Испания, Франция, Греция, Болгария. Документы под цель поездки. Москва и удалённо по России."
+    },
+    {
+      "file": "singapur.html",
+      "path": "singapur.html",
+      "index": true,
+      "title": "Виза в Сингапур для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Нужна ли виза в Сингапур в 2026. Сначала цель и даты, потом анкета. Визу заранее не обещаем. Офис в Москве."
+    },
+    {
+      "file": "spravka.html",
+      "path": "spravka.html",
+      "index": true,
+      "title": "Справка о несудимости — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Справка об отсутствии судимости через Госуслуги, при необходимости с апостилем. Бумажный экземпляр. Офис в Москве."
+    },
+    {
+      "file": "ssha.html",
+      "path": "ssha.html",
+      "index": true,
+      "title": "Виза в США для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Как получить визу в США: анкета, сбор, запись на собеседование. Подготовка в Москве. Решение консульства не обещаем."
+    },
+    {
+      "file": "strahovanie.html",
+      "path": "strahovanie.html",
+      "index": true,
+      "title": "Страховка для шенгенской визы — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Страховка Euroins для визы: 500 ₽ на 10 дней и 1 500 ₽ на 30 дней. Другое покрытие считаем отдельно."
+    },
+    {
+      "file": "tailand.html",
+      "path": "tailand.html",
+      "index": true,
+      "title": "Виза в Таиланд для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Нужна ли виза в Таиланд в 2026, проверяем на дату вылета. Если нужен стикер, собираем пакет. Москва и удалённо."
+    },
+    {
+      "file": "tayvan.html",
+      "path": "tayvan.html",
+      "index": true,
+      "title": "Виза на Тайвань для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Нужна ли виза на Тайвань. Не оформляем её как материковый Китай. Срок считаем от даты вылета. Офис в Москве."
+    },
+    {
+      "file": "uslugi.html",
+      "path": "uslugi.html",
+      "index": true,
+      "title": "Визы и загранпаспорт: каталог услуг — Виза тут",
+      "changefreq": "weekly",
+      "priority": "0.9",
+      "lastmod": "2026-10-17",
+      "description": "Шенген, Азия, США, загранпаспорт, справка о несудимости, страховка и брони. Стоимость на странице услуги. Офис в Москве."
+    },
+    {
+      "file": "veliko-britaniya.html",
+      "path": "veliko-britaniya.html",
+      "index": true,
+      "title": "Виза в Англию для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Виза в Англию не заменяется шенгеном. Туризм, учёба или визит к семье. Подготовка в Москве, сбор консульства отдельно."
+    },
+    {
+      "file": "vengriya.html",
+      "path": "vengriya.html",
+      "index": true,
+      "title": "Виза в Венгрию для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Нужна ли виза в Венгрию: да, туристическая типа C. Билет и отель только свои. Офис в Москве."
+    },
+    {
+      "file": "yaponiya.html",
+      "path": "yaponiya.html",
+      "index": true,
+      "title": "Виза в Японию для россиян в 2026 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Нужна ли виза в Японию и какие документы собрать. Маршрут по дням готовим до записи. Офис в Москве."
+    },
+    {
+      "file": "zagranpasport.html",
+      "path": "zagranpasport.html",
+      "index": true,
+      "title": "Загранпаспорт срочно в Москве — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-10-17",
+      "description": "Срочное оформление загранпаспорта в Москве: себе и ребёнку. Делаем до визы, если паспорта нет или он заканчивается."
+    },
+    {
+      "file": "blog-dokumenty-na-shengen.html",
+      "path": "blog-dokumenty-na-shengen.html",
+      "index": true,
+      "title": "Какие документы нужны на шенгенскую визу — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "lastmod": "2026-10-17",
+      "description": "Какие документы собрать на шенген: паспорт, анкета и подтверждение цели. Список зависит от страны. Офис в Москве."
+    },
+    {
+      "file": "blog-zagranpasport-pered-podachey.html",
+      "path": "blog-zagranpasport-pered-podachey.html",
+      "index": true,
+      "title": "Загранпаспорт перед подачей на визу — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "lastmod": "2026-10-17",
+      "description": "Что проверить в загранпаспорте перед визой: срок после поездки и чистые страницы. Если паспорта нет, визу не начинаем."
+    }
+  ]
+}

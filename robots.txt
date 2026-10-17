@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://capone06913.github.io/viza-tut/sitemap.xml

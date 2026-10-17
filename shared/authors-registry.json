@@ -1,0 +1,20 @@
+{
+  "registry_version": "1.0",
+  "comment": "Автор блога Виза тут. Сервис, не визовый центр.",
+  "authors": [
+    {
+      "id": "viza-tut",
+      "name_ru": "Виза тут",
+      "name_en": "Viza Tut",
+      "job_title_ru": "Подготовка виз и документов к поездке",
+      "bio_short_ru": "Готовим анкету, проверяем комплект и записываем на подачу. Визу выдаёт консульство.",
+      "display_byline_ru": "Виза тут",
+      "first_mention_ru": "Виза тут",
+      "expertise_tags": ["visa", "passport", "documents", "moscow"],
+      "avatar_url": null,
+      "sameAs": [
+        "https://capone06913.github.io/viza-tut/"
+      ]
+    }
+  ]
+}

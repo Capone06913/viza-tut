@@ -1,0 +1,23 @@
+{
+  "name": "excalibur-blog",
+  "displayName": "Excalibur Blog Cloud — Cursor Automation Plugin",
+  "description": "Плагин для Cursor-автоматизации блога: оркестратор + субагенты для SEO/GEO статей, визуалов, QA, indexer и WordPress publish.",
+  "version": "0.2.1",
+  "keywords": [
+    "excalibur",
+    "blog",
+    "seo",
+    "geo",
+    "wordpress",
+    "cursor-automation",
+    "orchestrator",
+    "subagents"
+  ],
+  "author": {
+    "name": "Excalibur BLOG"
+  },
+  "rules": "./rules/",
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "commands": "./commands/"
+}
