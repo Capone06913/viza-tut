@@ -1,0 +1,31 @@
+{
+  "policy_id": "viza_tut_utility_v1",
+  "label_ru": "Полезные статьи сервиса Виза тут",
+  "mission": "Статья помогает собрать комплект или понять, какая страница услуги нужна. Визу и срок консульства не обещаем.",
+  "audience": {
+    "tone": "короткий русский, спокойный, без рекламного крика"
+  },
+  "allowed_search_intent": ["how_to", "checklist", "comparison", "troubleshooting"],
+  "rejected_search_intent": ["news", "opinion", "entertainment"],
+  "allowed_article_mode": ["B"],
+  "topic_gate_blockers": [
+    "обещание визы или срока консульства",
+    "закупочная цена",
+    "название чужого агентства",
+    "направление названо закрытым",
+    "слово пакет в продающем тексте"
+  ],
+  "hard_bans": [
+    "визу гарантируем",
+    "визовый центр как имя компании",
+    "закупка",
+    "на стопе",
+    "не принимаем"
+  ],
+  "article_required_signals": {
+    "min_numbered_steps": 5,
+    "min_actionable_h2": 3,
+    "min_faq_pairs": 5,
+    "requires_workflow_or_table_or_checklist": true
+  }
+}
