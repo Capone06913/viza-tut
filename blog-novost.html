@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Заголовок новости — Виза тут</title>
+  <meta name="description" content="Шаблон новости в блоге «Виза тут».">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=PT+Serif:wght@700&family=Unbounded:wght@700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { serif: ['"PT Serif"', 'serif'], sans: ['Manrope', 'sans-serif'], display: ['Unbounded', 'sans-serif'] }, colors: { gold: { DEFAULT: '#C5A880', dark: '#A3865D' }, dark: '#111111' } } } }
+  </script>
+  <style>
+    body { background:#FCFCFA; color:#111; -webkit-font-smoothing:antialiased; }
+    .btn-gold { background:linear-gradient(135deg,#C5A880,#A3865D); color:#fff; }
+  </style>
+</head>
+<body class="font-sans">
+  <nav class="fixed z-50 w-full bg-[#121110]">
+    <div class="mx-auto flex h-[88px] max-w-7xl items-center justify-between px-6 lg:px-12">
+      <a href="index.html" class="font-serif text-[42px] font-bold leading-none text-white">Виза тут</a>
+      <div class="hidden items-center gap-6 text-[15px] font-medium text-white/90 md:flex lg:gap-8 lg:text-[16px]">
+        <div class="group relative">
+          <a href="uslugi.html" class="inline-flex items-center gap-1 whitespace-nowrap py-8 hover:text-gold">Визы
+            <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="invisible absolute left-0 top-full z-50 w-56 pt-1 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+            <div class="flex flex-col gap-2.5 border border-white/10 bg-[#1c1b1a] p-5 text-[15px] shadow-2xl">
+              <a href="shengen.html" class="hover:text-gold">Шенген</a>
+              <a href="kitay.html" class="hover:text-gold">Китай</a>
+              <a href="yaponiya.html" class="hover:text-gold">Япония</a>
+              <a href="indiya.html" class="hover:text-gold">Индия</a>
+              <a href="ssha.html" class="hover:text-gold">США</a>
+              <a href="veliko-britaniya.html" class="hover:text-gold">Англия</a>
+              <a href="uslugi.html" class="hover:text-gold">Все страны</a>
+            </div>
+          </div>
+        </div>
+        <div class="group relative">
+          <a href="uslugi.html#passport" class="inline-flex items-center gap-1 whitespace-nowrap py-8 hover:text-gold">Паспорта
+            <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="invisible absolute left-0 top-full z-50 w-56 pt-1 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+            <div class="flex flex-col gap-2.5 border border-white/10 bg-[#1c1b1a] p-5 text-[15px] shadow-2xl">
+              <a href="zagranpasport.html" class="hover:text-gold">Загранпаспорт</a>
+              <a href="pasport-bio.html" class="hover:text-gold">Биометрия</a>
+              <a href="pasport-rebenku.html" class="hover:text-gold">Ребёнку</a>
+              <a href="pasport-staryy.html" class="hover:text-gold">На 5 лет</a>
+              <a href="pasport-rf.html" class="hover:text-gold">Паспорт РФ</a>
+            </div>
+          </div>
+        </div>
+        <div class="group relative">
+          <a href="uslugi.html#extra" class="inline-flex items-center gap-1 whitespace-nowrap py-8 hover:text-gold">К подаче
+            <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="invisible absolute left-0 top-full z-50 w-56 pt-1 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+            <div class="flex flex-col gap-2.5 border border-white/10 bg-[#1c1b1a] p-5 text-[15px] shadow-2xl">
+              <a href="strahovanie.html" class="hover:text-gold">Страховка</a>
+              <a href="bilet.html" class="hover:text-gold">Авиабилеты</a>
+              <a href="otel.html" class="hover:text-gold">Отель</a>
+              <a href="spravka.html" class="hover:text-gold">Справка</a>
+              <a href="karta-ates.html" class="hover:text-gold">Карта АТЭС</a>
+              <a href="bankovskaya-karta.html" class="hover:text-gold">Карта для поездки</a>
+              <a href="agentstvam.html" class="hover:text-gold">Агентствам</a>
+            </div>
+          </div>
+        </div>
+        <a href="kak-rabotaem.html" class="whitespace-nowrap hover:text-gold">Сервис</a>
+        <a href="blog.html" class="whitespace-nowrap text-gold">Блог</a>
+        <a href="kontakty.html" class="whitespace-nowrap hover:text-gold">Контакты</a>
+      </div>
+      <a href="kontakty.html" class="btn-gold hidden rounded-full px-8 py-3.5 text-sm font-semibold uppercase tracking-wider md:inline-block">Оставить заявку</a>
+      <button class="text-white md:hidden" id="mobile-menu-btn" type="button" aria-label="Меню">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+    <div class="absolute hidden w-full border-t border-white/10 bg-[#121110] md:hidden" id="mobile-menu">
+      <div class="grid gap-8 px-6 py-8 text-[16px] font-medium text-white/90">
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-gold">Визы</p>
+          <div class="mt-3 flex flex-col gap-2">
+            <a href="shengen.html" class="hover:text-gold">Шенген</a>
+            <a href="kitay.html" class="hover:text-gold">Китай</a>
+            <a href="yaponiya.html" class="hover:text-gold">Япония</a>
+            <a href="indiya.html" class="hover:text-gold">Индия</a>
+            <a href="ssha.html" class="hover:text-gold">США</a>
+            <a href="veliko-britaniya.html" class="hover:text-gold">Англия</a>
+            <a href="uslugi.html" class="hover:text-gold">Все страны</a>
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-gold">Паспорта</p>
+          <div class="mt-3 flex flex-col gap-2">
+            <a href="zagranpasport.html" class="hover:text-gold">Загранпаспорт</a>
+            <a href="pasport-bio.html" class="hover:text-gold">Биометрия</a>
+            <a href="pasport-rebenku.html" class="hover:text-gold">Ребёнку</a>
+            <a href="pasport-staryy.html" class="hover:text-gold">На 5 лет</a>
+            <a href="pasport-rf.html" class="hover:text-gold">Паспорт РФ</a>
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-gold">К подаче</p>
+          <div class="mt-3 flex flex-col gap-2">
+            <a href="strahovanie.html" class="hover:text-gold">Страховка</a>
+            <a href="bilet.html" class="hover:text-gold">Авиабилеты</a>
+            <a href="otel.html" class="hover:text-gold">Отель</a>
+            <a href="spravka.html" class="hover:text-gold">Справка</a>
+            <a href="karta-ates.html" class="hover:text-gold">Карта АТЭС</a>
+            <a href="bankovskaya-karta.html" class="hover:text-gold">Карта для поездки</a>
+            <a href="agentstvam.html" class="hover:text-gold">Агентствам</a>
+          </div>
+        </div>
+        <a href="kak-rabotaem.html" class="hover:text-gold">Сервис</a>
+        <a href="blog.html" class="text-gold">Блог</a>
+        <a href="kontakty.html" class="hover:text-gold">Контакты</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="px-6 pb-20 pt-32 lg:px-12 lg:pb-28 lg:pt-40">
+    <article class="mx-auto max-w-3xl">
+      <a href="blog.html" class="text-sm font-bold uppercase tracking-widest text-gold-dark">Все записи</a>
+      <p class="mt-8 text-[13px] font-semibold uppercase tracking-widest text-gold-dark">Новость · 17 октября 2026</p>
+      <h1 class="mt-4 font-display text-[40px] font-bold leading-[1.05] tracking-[-0.03em] sm:text-[56px]">Заголовок новости</h1>
+      <p class="mt-8 text-[18px] font-medium leading-relaxed text-gray-600">Первый абзац шаблона. Сюда ставится текст новости.</p>
+      <p class="mt-5 text-[18px] font-medium leading-relaxed text-gray-600">Второй абзац шаблона. Его тоже заменяют.</p>
+    </article>
+  </main>
+
+  <footer class="bg-[#0a0a0a] px-6 py-12 text-gray-400 lg:px-12">
+    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4">
+      <a href="index.html" class="font-serif text-3xl text-white">Виза тут</a>
+      <a href="tel:+74956629899" class="hover:text-gold">+7 (495) 662-98-99</a>
+    </div>
+  </footer>
+  <script>
+    const navBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('mobile-menu');
+    if (navBtn && navMenu) navBtn.addEventListener('click', () => navMenu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
