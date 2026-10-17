@@ -1,4 +1,4 @@
-/* Страница не шире экрана. Заголовок уменьшается вместе с окном, длинное слово остаётся целым. */
+/* Страница не шире экрана. Длинные строки переносятся, заголовки героя не сжимаются. */
 
 html,
 body {
@@ -21,20 +21,11 @@ label {
   overflow-wrap: break-word;
 }
 
-h1.font-display {
-  font-size: clamp(20px, 6.2vw, 92px) !important;
-  line-height: 0.95 !important;
-  letter-spacing: -0.03em !important;
-}
-
-h2.font-display {
-  font-size: clamp(26px, 4.6vw, 56px) !important;
-  line-height: 1.08 !important;
-  letter-spacing: -0.03em !important;
-}
-
-[class*="340px_1fr"] > :first-child h2.font-display {
-  font-size: clamp(26px, 4.6vw, 44px) !important;
+@media (max-width: 767px) {
+  .font-display {
+    font-weight: 800 !important;
+    -webkit-font-smoothing: auto;
+  }
 }
 
 .catalog-nav {
