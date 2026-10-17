@@ -1,0 +1,53 @@
+/* Страница не шире экрана. Заголовок уменьшается вместе с окном, длинное слово остаётся целым. */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+img,
+video,
+svg,
+iframe {
+  max-width: 100%;
+}
+
+p,
+li,
+a,
+button,
+label {
+  overflow-wrap: break-word;
+}
+
+h1.font-display {
+  font-size: clamp(20px, 6.2vw, 92px) !important;
+  line-height: 0.95 !important;
+  letter-spacing: -0.03em !important;
+}
+
+h2.font-display {
+  font-size: clamp(26px, 4.6vw, 56px) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.03em !important;
+}
+
+[class*="340px_1fr"] > :first-child h2.font-display {
+  font-size: clamp(26px, 4.6vw, 44px) !important;
+}
+
+.catalog-nav {
+  width: 100%;
+  max-width: 100%;
+  overscroll-behavior-x: contain;
+}
+
+@media (max-width: 1023px) {
+  [data-aos="fade-left"],
+  [data-aos="fade-right"],
+  [data-aos="fade-left"].aos-animate,
+  [data-aos="fade-right"].aos-animate {
+    transform: none !important;
+  }
+}
