@@ -18,7 +18,7 @@
         "name": "Сколько стоит паспорт на 5 лет?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "21 000 ₽. Пошлина отдельно."
+          "text": "20 дней 24 900 ₽, 8 дней 78 000 ₽, 7 дней 85 000 ₽, 6 дней 92 000 ₽, 5 дней 116 000 ₽. Пошлина отдельно."
         }
       },
       {
@@ -42,7 +42,7 @@
         "name": "Чем он отличается от биометрического?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Пять лет и без той же процедуры отпечатков. Биометрический идёт отдельной страницей: за 20–22 дня 22 500 ₽, за 4 дня 99 000 ₽."
+          "text": "Пять лет и без той же процедуры отпечатков. Биометрия на 10 лет идёт отдельной страницей, там свои сроки."
         }
       },
       {
@@ -83,6 +83,18 @@
     .article-faq__item[open] .article-faq__icon::after { transform:scaleY(0); }
     .article-faq__body { height:0; overflow:hidden; transition:height .4s ease; }
     .article-faq__body p { padding-bottom:28px; }
+    .price-tab { border:0; border-radius:999px; background:transparent; padding:10px 18px; font-family:Unbounded,sans-serif; font-weight:700; font-size:15px; letter-spacing:-0.03em; color:rgba(17,17,17,.45); outline:none; }
+    .price-tab.is-on { background:#121110; color:#fff; }
+    .price-cell { display:block; width:100%; border:0; border-radius:16px; background:transparent; padding:4px 8px; text-align:left; outline:none; cursor:pointer; }
+    .price-cell:hover { background:rgba(197,168,128,.18); }
+    .price-cell.is-on { background:rgba(197,168,128,.28); }
+    .price-table { border-collapse:separate; border-spacing:0; }
+    .price-table thead th { background:#121110; color:#fff; font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; }
+    .price-table tbody th { font-size:17px; font-weight:700; }
+    .price-table tbody tr.is-alt th,
+    .price-table tbody tr.is-alt td { background:#f6f1e8; }
+    .price-table tbody th, .price-table tbody td { padding:22px 24px; border-bottom:1px solid rgba(17,17,17,.06); vertical-align:middle; }
+    .price-table tbody tr:last-child th, .price-table tbody tr:last-child td { border-bottom:0; }
     @media (prefers-reduced-motion: reduce) { .article-faq__body, .article-faq__icon::before, .article-faq__icon::after { transition:none; } }
   </style>
 </head>
@@ -317,6 +329,27 @@
     </div>
   </section>
 
+  <section class="border-t border-black/10 bg-white px-6 py-16 lg:px-12 lg:py-20">
+    <div class="mx-auto max-w-7xl">
+      <h2 class="font-display text-[36px] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[48px]">Стоимость</h2>
+      <p class="mt-4 text-[17px] font-medium leading-relaxed text-gray-600">Цена услуги. Пошлина, если она есть, идёт сверху.</p>
+            <div class="mt-8 overflow-x-auto rounded-3xl border border-black/10">
+        <table class="price-table w-full border-collapse text-left">
+          <thead class="bg-[#121110] text-[13px] font-bold uppercase tracking-widest text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold" scope="col">Срок</th>
+              <th class="px-5 py-4 font-semibold" scope="col">Цена</th>
+            </tr>
+          </thead>
+          <tbody id="price-body"></tbody>
+        </table>
+      </div>
+      <p id="price-chosen" class="mt-6 text-[16px] font-medium text-gray-600">Выберите срок в таблице.</p>
+      <a href="#zayavka" class="btn-gold mt-6 inline-flex rounded-full px-8 py-3.5 text-sm font-bold uppercase tracking-widest">Оставить заявку</a>
+
+    </div>
+  </section>
+
   <section class="bg-[#FCFCFA] px-6 py-16 lg:px-12 lg:py-20">
     <div class="mx-auto max-w-7xl">
       <h2 class="font-display text-[36px] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[48px]">Как передать</h2>
@@ -340,29 +373,13 @@
     </div>
   </section>
 
-  <section class="bg-white px-6 py-16 lg:px-12 lg:py-20">
-    <div class="mx-auto max-w-7xl">
-      <h2 class="font-display text-[36px] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[48px]">Стоимость</h2>
-      <p class="mt-4 text-[17px] font-medium leading-relaxed text-gray-600">Цена услуги. Пошлина, если она есть, идёт сверху.</p>
-      <div class="mt-8 grid gap-4 lg:grid-cols-3">
-        <article class="flex h-full flex-col rounded-3xl bg-[#121110] text-white p-7">
-          <p class="text-[15px] font-semibold text-gold">5 лет</p>
-          <h3 class="mt-4 font-display text-[22px] font-bold leading-[1.2] tracking-[-0.03em]">20 дней</h3>
-          <p class="mt-8 font-display text-[44px] font-bold leading-none tracking-[-0.04em]">21 000 ₽</p><p class="mt-3 text-[15px] font-medium leading-relaxed text-white/70">Пошлина отдельно.</p>
-          <div class="mt-auto h-8 shrink-0"></div>
-          <a href="#zayavka" class="btn-gold inline-flex w-fit self-start rounded-full px-7 py-3.5 text-sm font-bold uppercase tracking-widest">Оставить заявку</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
   <section class="border-t border-black/10 bg-white px-6 py-16 lg:px-12 lg:py-24">
     <div class="mx-auto max-w-3xl">
       <h2 class="font-display text-[36px] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[48px]">Частые вопросы</h2>
       <div class="article-faq__list mt-4 border-t border-black/10">
         <details class="article-faq__item">
           <summary class="article-faq__q"><span class="article-faq__q-text">Сколько стоит паспорт на 5 лет?</span><span class="article-faq__icon" aria-hidden="true"></span></summary>
-          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">21 000 ₽. Пошлина отдельно.</p></div>
+          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">20 дней 24 900 ₽, 8 дней 78 000 ₽, 7 дней 85 000 ₽, 6 дней 92 000 ₽, 5 дней 116 000 ₽. Пошлина отдельно.</p></div>
         </details>
         <details class="article-faq__item">
           <summary class="article-faq__q"><span class="article-faq__q-text">Пошлина уже в цене?</span><span class="article-faq__icon" aria-hidden="true"></span></summary>
@@ -374,7 +391,7 @@
         </details>
         <details class="article-faq__item">
           <summary class="article-faq__q"><span class="article-faq__q-text">Чем он отличается от биометрического?</span><span class="article-faq__icon" aria-hidden="true"></span></summary>
-          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Пять лет и без той же процедуры отпечатков. Биометрический идёт отдельной страницей: за 20–22 дня 22 500 ₽, за 4 дня 99 000 ₽.</p></div>
+          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Пять лет и без той же процедуры отпечатков. Биометрия на 10 лет идёт отдельной страницей, там свои сроки.</p></div>
         </details>
         <details class="article-faq__item">
           <summary class="article-faq__q"><span class="article-faq__q-text">Паспорт заменяет визу?</span><span class="article-faq__icon" aria-hidden="true"></span></summary>
@@ -384,11 +401,32 @@
     </div>
   </section>
 
+  <section class="bg-white px-6 py-16 lg:px-12 lg:py-20">
+    <div class="mx-auto max-w-7xl">
+      <h2 class="font-display text-[36px] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[48px]">Наши гарантии</h2>
+      <p class="mt-4 max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Цена и срок нашей работы фиксируются до оплаты. Паспорт выдаёт ведомство, решение заранее не обещаем.</p>
+      <div class="mt-8 grid gap-4 md:grid-cols-3">
+        <article class="rounded-3xl bg-[#121110] p-8 text-white">
+          <h3 class="font-display text-[26px] font-bold leading-[1.15] tracking-[-0.03em]">Цена</h3>
+          <p class="mt-3 text-[16px] font-medium leading-relaxed text-white/70">Сумму называем до оплаты и не меняем её, пока идёт наша работа. Пошлина отдельно.</p>
+        </article>
+        <article class="rounded-3xl bg-[#f6f1e8] p-8">
+          <h3 class="font-display text-[26px] font-bold leading-[1.15] tracking-[-0.03em]">Срок</h3>
+          <p class="mt-3 text-[16px] font-medium leading-relaxed text-gray-600">Срок нашей работы называем до оплаты. Если сорвали мы, пересчитываем стоимость.</p>
+        </article>
+        <article class="rounded-3xl border border-black/10 bg-white p-8">
+          <h3 class="font-display text-[26px] font-bold leading-[1.15] tracking-[-0.03em]">Решение</h3>
+          <p class="mt-3 text-[16px] font-medium leading-relaxed text-gray-600">Паспорт выдаёт ведомство. Мы готовим документы и ведём подачу. Выдачу заранее не обещаем.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section id="zayavka" class="bg-[#f6f1e8] px-6 py-20 lg:px-12">
     <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2">
       <div>
-        <h2 class="font-display text-[40px] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[52px]">Оставить<br>заявку</h2>
-        <p class="mt-5 max-w-md text-[17px] font-medium text-[#333]">Решение ведомства заранее не обещаем. Если в цене не сказано, что пошлина включена, её платят отдельно.</p>
+        <h2 class="font-display text-[40px] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[52px]">К какой<br>дате</h2>
+        <p class="mt-5 max-w-md text-[17px] font-medium text-[#333]">Напишите, к какой дате нужен паспорт. Скажем срок и цену. Заявка ни к чему не обязывает.</p>
         <a href="tel:+74956629899" class="mt-8 inline-block font-display text-2xl font-bold">+7 (495) 662-98-99</a>
       </div>
       <form id="lead" class="grid gap-8 sm:grid-cols-2">
@@ -400,7 +438,7 @@
             <option value="trip">К поездке</option>
           </select>
         </label>
-        <div class="sm:col-span-2"><button class="btn-gold rounded-full px-10 py-4 text-sm font-bold uppercase tracking-widest" type="submit">Оставить заявку</button></div>
+        <div class="sm:col-span-2"><button class="btn-gold rounded-full px-10 py-4 text-sm font-bold uppercase tracking-widest" type="submit">Узнать срок</button></div>
       </form>
     </div>
   </section>
@@ -428,6 +466,46 @@
     document.querySelectorAll(".pick").forEach((b) => b.addEventListener("click", () => { purpose = b.dataset.purpose; render(); }));
     document.getElementById("form-purpose").addEventListener("change", (e) => { purpose = e.target.value; render(); });
     document.getElementById("lead").addEventListener("submit", (e) => { e.preventDefault(); alert("Заявка принята. Менеджер свяжется с вами."); });
+    const priceGroups = {
+      'old': [
+        ['20 дней', '24 900 ₽', 'Пошлина отдельно'],
+        ['8 дней', '78 000 ₽', 'Пошлина отдельно'],
+        ['7 дней', '85 000 ₽', 'Пошлина отдельно'],
+        ['6 дней', '92 000 ₽', 'Пошлина отдельно'],
+        ['5 дней', '116 000 ₽', 'Пошлина отдельно']
+      ]
+    };
+    const priceNames = { 'old': '5 лет' };
+    let priceGroup = 'old';
+    let priceChosen = "";
+    function renderPrices() {
+      document.querySelectorAll(".price-tab").forEach((b) => {
+        const on = b.dataset.group === priceGroup;
+        b.classList.toggle("is-on", on);
+        b.setAttribute("aria-selected", on ? "true" : "false");
+      });
+      const rows = priceGroups[priceGroup] || [];
+      const name = priceNames[priceGroup] || "";
+      document.getElementById("price-body").innerHTML = rows.map((row, i) => {
+        const id = priceGroup + "|" + row[0];
+        const on = priceChosen === id ? " is-on" : "";
+        const stripe = i % 2 ? " is-alt" : "";
+        const label = (name ? name + ", " : "") + row[0] + ", " + row[1];
+        return '<tr class="price-row' + stripe + '"><th scope="row">' + row[0] + '</th><td><button type="button" class="price-cell' + on + '" data-id="' + id + '" data-label="' + label + '"><span class="font-display text-[28px] font-bold leading-none tracking-[-0.04em]">' + row[1] + '</span><span class="mt-2 block text-[13px] font-medium text-gray-500">' + row[2] + "</span></button></td></tr>";
+      }).join("");
+      document.querySelectorAll(".price-cell").forEach((b) => b.addEventListener("click", () => {
+        priceChosen = b.dataset.id;
+        document.getElementById("price-chosen").textContent = b.dataset.label;
+        renderPrices();
+      }));
+    }
+    document.querySelectorAll(".price-tab").forEach((b) => b.addEventListener("click", () => {
+      priceGroup = b.dataset.group;
+      priceChosen = "";
+      document.getElementById("price-chosen").textContent = 'Выберите срок в таблице.';
+      renderPrices();
+    }));
+    renderPrices();
     render();
   </script>
 

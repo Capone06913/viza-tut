@@ -18,7 +18,7 @@
         "name": "Сколько стоит срочный загранпаспорт?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Биометрия: за 20–22 дня 22 500 ₽, за 4 дня 99 000 ₽. Старый образец 21 000 ₽, ребёнку 24 000 ₽. Пошлины отдельно."
+          "text": "Взрослому, паспорт на 10 лет: 20–22 дня 24 900 ₽, 15 дней 29 900 ₽, 12–13 дней 33 900 ₽, 10–11 дней 61 900 ₽, 8 дней 78 000 ₽, 7 дней 85 000 ₽, 6 дней 92 000 ₽, 5 дней 105 000 ₽. Паспорт на 5 лет: 20 дней 24 900 ₽, 8 дней 78 000 ₽, 7 дней 85 000 ₽, 6 дней 92 000 ₽, 5 дней 116 000 ₽. Ребёнку до 14 лет, паспорт на 10 лет: 10–12 дней 24 900 ₽, 5–6 дней 31 500 ₽, 2 дня 74 000 ₽. Паспорт на 5 лет ребёнку: 1 день 43 000 ₽, полдня 60 000 ₽. Пошлина отдельно."
         }
       },
       {
@@ -26,7 +26,7 @@
         "name": "Пошлина уже в цене?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Нет. У биометрии это 6 000 ₽ или 12 500 ₽, у старого образца и детского пошлина тоже отдельно."
+          "text": "Нет. У взрослой биометрии за 20–22 дня это 6 000 ₽. В остальных строках пошлину называют до оплаты."
         }
       },
       {
@@ -50,7 +50,7 @@
         "name": "Детский идёт по взрослой цене?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Нет. Ребёнку 24 000 ₽, пошлина отдельно."
+          "text": "Нет. Обычный детский срок 10–12 дней стоит 24 900 ₽. Короткие сроки ребёнку — отдельные строки в таблице. Пошлина отдельно."
         }
       }
     ]
@@ -83,6 +83,18 @@
     .article-faq__item[open] .article-faq__icon::after { transform:scaleY(0); }
     .article-faq__body { height:0; overflow:hidden; transition:height .4s ease; }
     .article-faq__body p { padding-bottom:28px; }
+    .price-tab { border:0; border-radius:999px; background:transparent; padding:10px 18px; font-family:Unbounded,sans-serif; font-weight:700; font-size:15px; letter-spacing:-0.03em; color:rgba(17,17,17,.45); outline:none; }
+    .price-tab.is-on { background:#121110; color:#fff; }
+    .price-cell { display:block; width:100%; border:0; border-radius:16px; background:transparent; padding:4px 8px; text-align:left; outline:none; cursor:pointer; }
+    .price-cell:hover { background:rgba(197,168,128,.18); }
+    .price-cell.is-on { background:rgba(197,168,128,.28); }
+    .price-table { border-collapse:separate; border-spacing:0; }
+    .price-table thead th { background:#121110; color:#fff; font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; }
+    .price-table tbody th { font-size:17px; font-weight:700; }
+    .price-table tbody tr.is-alt th,
+    .price-table tbody tr.is-alt td { background:#f6f1e8; }
+    .price-table tbody th, .price-table tbody td { padding:22px 24px; border-bottom:1px solid rgba(17,17,17,.06); vertical-align:middle; }
+    .price-table tbody tr:last-child th, .price-table tbody tr:last-child td { border-bottom:0; }
     @media (prefers-reduced-motion: reduce) { .article-faq__body, .article-faq__icon::before, .article-faq__icon::after { transition:none; } }
   </style>
 </head>
@@ -213,7 +225,7 @@
         <p class="mt-4 text-[16px] font-medium leading-relaxed text-white/70">Биометрия. Отпечатки сдают лично.</p>
       </article>
       <article class="rounded-3xl bg-white p-8">
-        <p class="font-display text-[40px] font-bold leading-none tracking-[-0.04em]">4 дня</p>
+        <p class="font-display text-[40px] font-bold leading-none tracking-[-0.04em]">5 дней</p>
         <p class="mt-4 text-[16px] font-medium leading-relaxed text-gray-600">Короткий срок. Визу до готового паспорта не начинаем.</p>
       </article>
       <article class="rounded-3xl border border-black/10 bg-white p-8">
@@ -272,35 +284,6 @@
     </div>
   </section>
 
-  <section class="bg-white px-6 py-16 lg:px-12 lg:py-20">
-    <div class="mx-auto max-w-7xl">
-      <h2 class="font-display text-[36px] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[48px]">Какой паспорт</h2>
-      <div class="mt-8 grid gap-4 md:grid-cols-3">
-        <article class="flex min-h-[280px] flex-col justify-between rounded-3xl bg-[#121110] text-white p-8">
-          <p class="font-display text-[88px] font-bold leading-none tracking-[-0.05em]">10</p>
-          <div>
-            <h3 class="font-display text-[26px] font-bold leading-[1.1] tracking-[-0.03em]">На 10 лет</h3>
-            <p class="mt-2 text-[16px] font-medium text-white/70">Биометрия. Отпечатки лично. 20–22 дня или 4 дня.</p>
-          </div>
-        </article>
-        <article class="flex min-h-[280px] flex-col justify-between rounded-3xl bg-[#f6f1e8] p-8">
-          <p class="font-display text-[88px] font-bold leading-none tracking-[-0.05em]">5</p>
-          <div>
-            <h3 class="font-display text-[26px] font-bold leading-[1.1] tracking-[-0.03em]">На 5 лет</h3>
-            <p class="mt-2 text-[16px] font-medium text-gray-600">Старый образец, если биометрия не проходит.</p>
-          </div>
-        </article>
-        <article class="flex min-h-[280px] flex-col justify-between rounded-3xl border border-black/10 bg-white p-8">
-          <p class="font-display text-[88px] font-bold leading-none tracking-[-0.05em] text-gold-dark">Р</p>
-          <div>
-            <h3 class="font-display text-[26px] font-bold leading-[1.1] tracking-[-0.03em]">Ребёнку</h3>
-            <p class="mt-2 text-[16px] font-medium text-gray-600">До 14 лет, 10–12 дней.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
   <section class="border-t border-black/10 bg-white px-6 py-16 lg:px-12 lg:py-24">
     <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[340px_1fr] lg:gap-24">
       <div>
@@ -314,6 +297,36 @@
         <p id="pack-title" class="font-display text-[40px] font-bold leading-none tracking-[-0.03em] sm:text-[52px]">Себе</p>
         <ul id="pack-list" class="mt-6 border-t border-black/10"></ul>
       </div>
+    </div>
+  </section>
+
+  <section class="border-t border-black/10 bg-white px-6 py-16 lg:px-12 lg:py-20" id="stoimost">
+    <div class="mx-auto max-w-7xl">
+      <h2 class="font-display text-[36px] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[48px]">Стоимость</h2>
+      <p class="mt-4 max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Пошлина в цену не входит. У взрослой биометрии за 20–22 дня это 6 000 ₽. В остальных строках пошлину называют до оплаты. Внутри одного паспорта чем короче срок, тем выше цена.</p>
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <div class="inline-flex gap-1 rounded-full bg-[#f6f1e8] p-1" role="tablist" aria-label="Кому паспорт">
+          <button type="button" class="price-tab is-on" data-who="adult" role="tab" aria-selected="true">Взрослый</button>
+          <button type="button" class="price-tab" data-who="child" role="tab" aria-selected="false">Ребёнок до 14 лет</button>
+        </div>
+        <div class="inline-flex gap-1 rounded-full bg-[#f6f1e8] p-1" role="tablist" aria-label="На сколько лет паспорт">
+          <button type="button" class="price-tab is-on" data-years="10 лет" role="tab" aria-selected="true">10 лет</button>
+          <button type="button" class="price-tab" data-years="5 лет" role="tab" aria-selected="false">5 лет</button>
+        </div>
+      </div>
+      <div class="mt-6 overflow-x-auto rounded-3xl border border-black/10">
+        <table class="price-table w-full border-collapse text-left">
+          <thead class="bg-[#121110] text-[13px] font-bold uppercase tracking-widest text-white">
+            <tr>
+              <th class="px-5 py-4 font-semibold" scope="col">Срок</th>
+              <th class="px-5 py-4 font-semibold" scope="col">Цена</th>
+            </tr>
+          </thead>
+          <tbody id="price-body"></tbody>
+        </table>
+      </div>
+      <p id="price-chosen" class="mt-6 text-[16px] font-medium text-gray-600">Выберите срок в таблице.</p>
+      <a href="#zayavka" class="btn-gold mt-6 inline-flex rounded-full px-8 py-3.5 text-sm font-bold uppercase tracking-widest">Оставить заявку</a>
     </div>
   </section>
 
@@ -340,54 +353,17 @@
     </div>
   </section>
 
-  <section class="bg-white px-6 py-16 lg:px-12 lg:py-20">
-    <div class="mx-auto max-w-7xl">
-      <h2 class="font-display text-[36px] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[48px]">Стоимость</h2>
-      <p class="mt-4 text-[17px] font-medium leading-relaxed text-gray-600">Три частых тарифа. Пошлина отдельно. Паспорт РФ — на своей странице.</p>
-      <div class="mt-8 grid gap-4 lg:grid-cols-3">
-        <article class="flex h-full flex-col rounded-3xl bg-[#121110] text-white p-7">
-          <p class="text-[15px] font-semibold text-gold">10 лет</p>
-          <h3 class="mt-4 font-display text-[22px] font-bold leading-[1.2] tracking-[-0.03em]">20–22 дня</h3>
-          <p class="mt-8 font-display text-[44px] font-bold leading-none tracking-[-0.04em]">22 500 ₽</p><p class="mt-3 text-[15px] font-medium leading-relaxed text-white/70">Пошлина 6 000 ₽ отдельно.</p>
-          <div class="mt-auto h-8 shrink-0"></div>
-          <a href="#zayavka" class="btn-gold inline-flex w-fit self-start rounded-full px-7 py-3.5 text-sm font-bold uppercase tracking-widest">Оставить заявку</a>
-        </article>
-        <article class="flex h-full flex-col rounded-3xl border border-black/10 bg-[#FCFCFA] p-7">
-          <p class="text-[15px] font-semibold text-gold-dark">10 лет</p>
-          <h3 class="mt-4 font-display text-[22px] font-bold leading-[1.2] tracking-[-0.03em]">4 дня</h3>
-          <p class="mt-8 font-display text-[44px] font-bold leading-none tracking-[-0.04em]">99 000 ₽</p><p class="mt-3 text-[15px] font-medium leading-relaxed text-gray-600">Пошлина 12 500 ₽ отдельно.</p>
-          <div class="mt-auto h-8 shrink-0"></div>
-          <a href="#zayavka" class="inline-flex w-fit self-start rounded-full border border-black/15 px-7 py-3.5 text-sm font-bold uppercase tracking-widest hover:border-black">Оставить заявку</a>
-        </article>
-        <article class="flex h-full flex-col rounded-3xl border border-black/10 bg-white p-7">
-          <p class="text-[15px] font-semibold text-gold-dark">5 лет</p>
-          <h3 class="mt-4 font-display text-[22px] font-bold leading-[1.2] tracking-[-0.03em]">20 дней</h3>
-          <p class="mt-8 font-display text-[44px] font-bold leading-none tracking-[-0.04em]">21 000 ₽</p><p class="mt-3 text-[15px] font-medium leading-relaxed text-gray-600">Пошлина отдельно.</p>
-          <div class="mt-auto h-8 shrink-0"></div>
-          <a href="#zayavka" class="inline-flex w-fit self-start rounded-full border border-black/15 px-7 py-3.5 text-sm font-bold uppercase tracking-widest hover:border-black">Оставить заявку</a>
-        </article>
-        <article class="flex h-full flex-col rounded-3xl bg-[#121110] text-white p-7">
-          <p class="text-[15px] font-semibold text-gold">Ребёнку</p>
-          <h3 class="mt-4 font-display text-[22px] font-bold leading-[1.2] tracking-[-0.03em]">10–12 дней</h3>
-          <p class="mt-8 font-display text-[44px] font-bold leading-none tracking-[-0.04em]">24 000 ₽</p><p class="mt-3 text-[15px] font-medium leading-relaxed text-white/70">Пошлина отдельно.</p>
-          <div class="mt-auto h-8 shrink-0"></div>
-          <a href="#zayavka" class="btn-gold inline-flex w-fit self-start rounded-full px-7 py-3.5 text-sm font-bold uppercase tracking-widest">Оставить заявку</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
   <section class="border-t border-black/10 bg-white px-6 py-16 lg:px-12 lg:py-24">
     <div class="mx-auto max-w-3xl">
       <h2 class="font-display text-[36px] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[48px]">Частые вопросы</h2>
       <div class="article-faq__list mt-4 border-t border-black/10">
         <details class="article-faq__item">
           <summary class="article-faq__q"><span class="article-faq__q-text">Сколько стоит срочный загранпаспорт?</span><span class="article-faq__icon" aria-hidden="true"></span></summary>
-          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Биометрия: за 20–22 дня 22 500 ₽, за 4 дня 99 000 ₽. Старый образец 21 000 ₽, ребёнку 24 000 ₽. Пошлины отдельно.</p></div>
+          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Взрослому, паспорт на 10 лет: 20–22 дня 24 900 ₽, 15 дней 29 900 ₽, 12–13 дней 33 900 ₽, 10–11 дней 61 900 ₽, 8 дней 78 000 ₽, 7 дней 85 000 ₽, 6 дней 92 000 ₽, 5 дней 105 000 ₽. Паспорт на 5 лет: 20 дней 24 900 ₽, 8 дней 78 000 ₽, 7 дней 85 000 ₽, 6 дней 92 000 ₽, 5 дней 116 000 ₽. Ребёнку до 14 лет, паспорт на 10 лет: 10–12 дней 24 900 ₽, 5–6 дней 31 500 ₽, 2 дня 74 000 ₽. Паспорт на 5 лет ребёнку: 1 день 43 000 ₽, полдня 60 000 ₽. Пошлина отдельно.</p></div>
         </details>
         <details class="article-faq__item">
           <summary class="article-faq__q"><span class="article-faq__q-text">Пошлина уже в цене?</span><span class="article-faq__icon" aria-hidden="true"></span></summary>
-          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Нет. У биометрии это 6 000 ₽ или 12 500 ₽, у старого образца и детского пошлина тоже отдельно.</p></div>
+          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Нет. У взрослой биометрии за 20–22 дня это 6 000 ₽. В остальных строках пошлину называют до оплаты.</p></div>
         </details>
         <details class="article-faq__item">
           <summary class="article-faq__q"><span class="article-faq__q-text">Можно начать визу, пока паспорта нет?</span><span class="article-faq__icon" aria-hidden="true"></span></summary>
@@ -399,8 +375,29 @@
         </details>
         <details class="article-faq__item">
           <summary class="article-faq__q"><span class="article-faq__q-text">Детский идёт по взрослой цене?</span><span class="article-faq__icon" aria-hidden="true"></span></summary>
-          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Нет. Ребёнку 24 000 ₽, пошлина отдельно.</p></div>
+          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Нет. Обычный детский срок 10–12 дней стоит 24 900 ₽. Короткие сроки ребёнку — отдельные строки в таблице. Пошлина отдельно.</p></div>
         </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white px-6 py-16 lg:px-12 lg:py-20">
+    <div class="mx-auto max-w-7xl">
+      <h2 class="font-display text-[36px] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[48px]">Наши гарантии</h2>
+      <p class="mt-4 max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Цена и срок нашей работы фиксируются до оплаты. Паспорт выдаёт ведомство, решение заранее не обещаем.</p>
+      <div class="mt-8 grid gap-4 md:grid-cols-3">
+        <article class="rounded-3xl bg-[#121110] p-8 text-white">
+          <h3 class="font-display text-[26px] font-bold leading-[1.15] tracking-[-0.03em]">Цена</h3>
+          <p class="mt-3 text-[16px] font-medium leading-relaxed text-white/70">Сумму называем до оплаты и не меняем её, пока идёт наша работа. Пошлина отдельно.</p>
+        </article>
+        <article class="rounded-3xl bg-[#f6f1e8] p-8">
+          <h3 class="font-display text-[26px] font-bold leading-[1.15] tracking-[-0.03em]">Срок</h3>
+          <p class="mt-3 text-[16px] font-medium leading-relaxed text-gray-600">Срок нашей работы называем до оплаты. Если сорвали мы, пересчитываем стоимость.</p>
+        </article>
+        <article class="rounded-3xl border border-black/10 bg-white p-8">
+          <h3 class="font-display text-[26px] font-bold leading-[1.15] tracking-[-0.03em]">Решение</h3>
+          <p class="mt-3 text-[16px] font-medium leading-relaxed text-gray-600">Паспорт выдаёт ведомство. Мы готовим документы и ведём подачу. Выдачу заранее не обещаем.</p>
+        </article>
       </div>
     </div>
   </section>
@@ -408,8 +405,8 @@
   <section id="zayavka" class="bg-[#f6f1e8] px-6 py-20 lg:px-12">
     <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2">
       <div>
-        <h2 class="font-display text-[40px] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[52px]">Кому<br>паспорт</h2>
-        <p class="mt-5 max-w-md text-[17px] font-medium text-[#333]">Визу до готового паспорта не начинаем. Пошлина идёт отдельно.</p>
+        <h2 class="font-display text-[40px] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[52px]">К какой<br>дате</h2>
+        <p class="mt-5 max-w-md text-[17px] font-medium text-[#333]">Напишите, к какой дате нужен паспорт. Скажем срок и цену. Заявка ни к чему не обязывает.</p>
         <a href="tel:+74956629899" class="mt-8 inline-block font-display text-2xl font-bold">+7 (495) 662-98-99</a>
       </div>
       <form id="lead" class="grid gap-8 sm:grid-cols-2">
@@ -421,7 +418,7 @@
             <option value="child">Ребёнку</option>
           </select>
         </label>
-        <div class="sm:col-span-2"><button class="btn-gold rounded-full px-10 py-4 text-sm font-bold uppercase tracking-widest" type="submit">Оставить заявку</button></div>
+        <div class="sm:col-span-2"><button class="btn-gold rounded-full px-10 py-4 text-sm font-bold uppercase tracking-widest" type="submit">Узнать срок</button></div>
       </form>
     </div>
   </section>
@@ -434,6 +431,74 @@
     </div>
   </footer>
   <script>
+    const tariffs = {
+      adult: [
+        ["10 лет", [
+          ["20–22 дня", "24 900 ₽", "Пошлина 6 000 ₽ отдельно"],
+          ["15 дней", "29 900 ₽", "Пошлина отдельно"],
+          ["12–13 дней", "33 900 ₽", "Пошлина отдельно"],
+          ["10–11 дней", "61 900 ₽", "Пошлина отдельно"],
+          ["8 дней", "78 000 ₽", "Пошлина отдельно"],
+          ["7 дней", "85 000 ₽", "Пошлина отдельно"],
+          ["6 дней", "92 000 ₽", "Пошлина отдельно"],
+          ["5 дней", "105 000 ₽", "Пошлина отдельно"]
+        ]],
+        ["5 лет", [
+          ["20 дней", "24 900 ₽", "Пошлина отдельно"],
+          ["8 дней", "78 000 ₽", "Пошлина отдельно"],
+          ["7 дней", "85 000 ₽", "Пошлина отдельно"],
+          ["6 дней", "92 000 ₽", "Пошлина отдельно"],
+          ["5 дней", "116 000 ₽", "Пошлина отдельно"]
+        ]]
+      ],
+      child: [
+        ["10 лет", [
+          ["10–12 дней", "24 900 ₽", "Пошлина отдельно"],
+          ["5–6 дней", "31 500 ₽", "Пошлина отдельно"],
+          ["2 дня", "74 000 ₽", "Пошлина отдельно"]
+        ]],
+        ["5 лет", [
+          ["1 день", "43 000 ₽", "Пошлина отдельно"],
+          ["Полдня", "60 000 ₽", "Пошлина отдельно"]
+        ]]
+      ]
+    };
+    const whoName = { adult: "Взрослый", child: "Ребёнок до 14 лет" };
+    let who = "adult";
+    let years = "10 лет";
+    let chosen = "";
+    function renderPrices() {
+      document.querySelectorAll(".price-tab[data-who]").forEach((b) => {
+        const on = b.dataset.who === who;
+        b.classList.toggle("is-on", on);
+        b.setAttribute("aria-selected", on ? "true" : "false");
+      });
+      document.querySelectorAll(".price-tab[data-years]").forEach((b) => {
+        const on = b.dataset.years === years;
+        b.classList.toggle("is-on", on);
+        b.setAttribute("aria-selected", on ? "true" : "false");
+      });
+      const group = tariffs[who].find(([name]) => name === years);
+      const rows = group ? group[1] : [];
+      const html = rows.map((row, alt) => {
+        const id = who + "|" + years + "|" + row[0];
+        const on = chosen === id ? " is-on" : "";
+        const stripe = alt % 2 ? " is-alt" : "";
+        const label = whoName[who] + ", " + years + ", " + row[0] + ", " + row[1];
+        return '<tr class="price-row' + stripe + '"><th scope="row">' + row[0] + '</th><td><button type="button" class="price-cell' + on + '" data-id="' + id + '" data-label="' + label + '"><span class="price-sum font-display text-[28px] font-bold leading-none tracking-[-0.04em]">' + row[1] + '</span><span class="mt-2 block text-[13px] font-medium text-gray-500">' + row[2] + "</span></button></td></tr>";
+      });
+      document.getElementById("price-body").innerHTML = html.join("");
+      document.querySelectorAll(".price-cell").forEach((b) => b.addEventListener("click", () => {
+        chosen = b.dataset.id;
+        document.getElementById("price-chosen").textContent = b.dataset.label;
+        document.getElementById("form-purpose").value = who === "child" ? "child" : "self";
+        purpose = document.getElementById("form-purpose").value;
+        render();
+        renderPrices();
+      }));
+    }
+    document.querySelectorAll(".price-tab[data-who]").forEach((b) => b.addEventListener("click", () => { who = b.dataset.who; chosen = ""; document.getElementById("price-chosen").textContent = "Выберите срок в таблице."; renderPrices(); }));
+    document.querySelectorAll(".price-tab[data-years]").forEach((b) => b.addEventListener("click", () => { years = b.dataset.years; chosen = ""; document.getElementById("price-chosen").textContent = "Выберите срок в таблице."; renderPrices(); }));
     const packs = {
       "self": ["Паспорт РФ", "Старый загран, если есть", "Дата поездки", "Куда нужна виза"],
       "child": ["Свидетельство о рождении", "Паспорт родителя", "Согласие второго родителя, если нужно", "Кто едет вместе"]
@@ -450,6 +515,7 @@
     document.getElementById("form-purpose").addEventListener("change", (e) => { purpose = e.target.value; render(); });
     document.getElementById("lead").addEventListener("submit", (e) => { e.preventDefault(); alert("Заявка принята. Менеджер свяжется с вами."); });
     render();
+    renderPrices();
   </script>
 
 <script>
