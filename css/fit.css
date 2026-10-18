@@ -1,5 +1,22 @@
 /* Страница не шире экрана. Длинные строки переносятся, заголовки героя не сжимаются. */
 
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/cormorantgaramond/v21/co3smX5slCNuHLi8bLeY9MK7whWMhyjYrGFEsdtdc62E6zd5wDDOjw.ttf") format("truetype");
+}
+
+.step-num {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 0.8;
+  letter-spacing: 0.02em;
+}
+
 html,
 body {
   max-width: 100%;
@@ -59,6 +76,27 @@ label {
 .place-card > h3,
 .place-card > div {
   z-index: 2;
+}
+
+select.input-premium {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 2rem;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23111111' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 1.15rem 1.15rem;
+}
+
+select.input-premium::-ms-expand {
+  display: none;
+}
+
+a.btn-gold,
+button.btn-gold {
+  border-radius: 9999px;
 }
 
 .place-kicker {
