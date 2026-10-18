@@ -392,6 +392,26 @@
       "description": "Срочное оформление загранпаспорта в Москве: себе и ребёнку. Делаем до визы, если паспорта нет или он заканчивается."
     },
     {
+      "file": "blog-kitay-bez-vizy-2027.html",
+      "path": "blog-kitay-bez-vizy-2027.html",
+      "index": true,
+      "title": "Нужна ли виза в Китай до 31 декабря 2027 — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "lastmod": "2026-10-18",
+      "description": "Кому из россиян не нужна виза в Китай до 31 декабря 2027: 30 дней, обычный паспорт и цели поездки. Если дольше, визу готовим заранее."
+    },
+    {
+      "file": "blog-zagran-rebenku.html",
+      "path": "blog-zagran-rebenku.html",
+      "index": true,
+      "title": "Какие документы собрать на загранпаспорт ребёнку — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "lastmod": "2026-10-18",
+      "description": "Ребёнку нужен свой загранпаспорт, не строка в паспорте родителя. Что собрать до 14 лет и что проверить до билета."
+    },
+    {
       "file": "blog-dokumenty-na-shengen.html",
       "path": "blog-dokumenty-na-shengen.html",
       "index": true,
