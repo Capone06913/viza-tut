@@ -412,6 +412,26 @@
       "description": "Ребёнку нужен свой загранпаспорт, не строка в паспорте родителя. Что собрать до 14 лет и что проверить до билета."
     },
     {
+      "file": "blog-spravka-o-nesudimosti.html",
+      "path": "blog-spravka-o-nesudimosti.html",
+      "index": false,
+      "title": "Как получить справку о несудимости и сколько она действует — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "lastmod": "2026-10-19",
+      "description": "Где заказать справку о несудимости и что значит срок в регламенте. Три месяца там — хранение бумаги, не срок годности."
+    },
+    {
+      "file": "blog-novyy-ili-pyatiletniy.html",
+      "path": "blog-novyy-ili-pyatiletniy.html",
+      "index": false,
+      "title": "Чем биометрический паспорт отличается от паспорта на 5 лет — Виза тут",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "lastmod": "2026-10-19",
+      "description": "Биометрия на 10 лет и паспорт на 5 лет: чем отличаются и куда пятилетний уже не берут."
+    },
+    {
       "file": "blog-dokumenty-na-shengen.html",
       "path": "blog-dokumenty-na-shengen.html",
       "index": false,
