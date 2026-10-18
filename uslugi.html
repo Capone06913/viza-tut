@@ -8,6 +8,63 @@
   <meta name="description" content="Шенген, Азия, США, загранпаспорт, справка о несудимости, страховка и брони. Стоимость на странице услуги. Офис в Москве.">
   <link rel="canonical" href="https://capone06913.github.io/viza-tut/uslugi.html">
   <meta name="robots" content="index, follow">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ru",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Какие визы вы оформляете?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Шенген, Кипр, Венгрию, Китай, Тайвань, Японию, Индию, Сингапур, Таиланд, США, Англию, Австралию, Канаду и Новую Зеландию. Рядом — загранпаспорт, справка о несудимости, страховка и брони."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Где смотреть цену, если в каталоге её нет?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "На странице услуги, в блоке «Стоимость». У каждой страны свой тариф и свой ответ, входит ли сбор."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Можно ли начать визу без загранпаспорта?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Нет. Сначала паспорт, если его нет, он кончается раньше поездки или нет чистых страниц. Иначе комплект некуда ставить."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Вы гарантируете одобрение визы?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Нет. Визу выдаёт консульство, паспорт — ведомство, карту для поездки — банк. Мы готовим документы и фиксируем цену своей работы."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Можно ли подать документы из другого города?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Анкету принимаем удалённо. Офис в Москве: Большая Полянка 42, строение 1, 4 этаж, офис 426, будни 10:00–18:00, телефон +7 (495) 662-98-99."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Что подготовить до звонка?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Страну, цель и даты. По ним видно, нужен ли сначала паспорт и какой комплект собирать. Без дат бронь и страховку не считаем."
+      }
+    }
+  ]
+}
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=PT+Serif:wght@700&family=Unbounded:wght@700;800&display=swap" rel="stylesheet">
@@ -21,6 +78,19 @@
     .catalog-nav { scrollbar-width:none; }
     .catalog-nav::-webkit-scrollbar { display:none; }
     .catalog-nav a.is-on { color:#111; }
+  
+    .article-faq__item { border-bottom:1px solid rgba(17,17,17,.1); }
+    .article-faq__q { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:28px 0; cursor:pointer; list-style:none; }
+    .article-faq__q::-webkit-details-marker { display:none; }
+    .article-faq__q-text { font-family:Unbounded,sans-serif; font-weight:700; font-size:22px; line-height:1.2; letter-spacing:-0.03em; }
+    .article-faq__icon { position:relative; width:18px; height:18px; flex:none; }
+    .article-faq__icon::before, .article-faq__icon::after { content:""; position:absolute; background:#C5A880; transition:transform .35s ease; }
+    .article-faq__icon::before { left:0; top:8px; width:18px; height:2px; }
+    .article-faq__icon::after { left:8px; top:0; width:2px; height:18px; }
+    .article-faq__item[open] .article-faq__icon::after { transform:scaleY(0); }
+    .article-faq__body { height:0; overflow:hidden; transition:height .4s ease; }
+    .article-faq__body p { padding-bottom:28px; }
+    @media (prefers-reduced-motion: reduce) { .article-faq__body, .article-faq__icon::before, .article-faq__icon::after { transition:none; } }
   </style>
 </head>
 <body class="font-sans">
@@ -365,7 +435,7 @@
         </div>
         <a href="novaya-zelandiya.html" class="place-card group relative min-h-[240px] overflow-hidden rounded-3xl lg:col-span-12">
           <img src="media/4863995.jpg" alt="Новая Зеландия" class="absolute inset-0 h-full w-full object-cover object-[center_40%] transition duration-700 group-hover:scale-[1.03]">
-          <div class="absolute inset-y-0 left-0 flex flex-col justify-end p-8"><p class="place-kicker">Электронная</p>
+          <div class="absolute inset-y-0 left-0 flex flex-col justify-end p-8"><p class="place-kicker">Онлайн</p>
             <h3 class="font-display text-[36px] font-bold tracking-[-0.03em] text-white">Новая Зеландия</h3><p class="mt-1 text-[15px] text-white/80">Электронная виза.</p></div>
         </a>
       </div>
@@ -396,6 +466,38 @@
     </div>
   </section>
 
+  <section id="voprosy" class="border-t border-black/10 bg-white px-6 py-16 lg:px-12 lg:py-24">
+    <div class="mx-auto max-w-3xl">
+      <h2 class="font-display text-[36px] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[48px]">Частые вопросы</h2>
+      <div class="article-faq__list mt-4 border-t border-black/10">
+        <details class="article-faq__item">
+          <summary class="article-faq__q"><span class="article-faq__q-text">Какие визы вы оформляете?</span><span class="article-faq__icon" aria-hidden="true"></span></summary>
+          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Шенген, Кипр, Венгрию, Китай, Тайвань, Японию, Индию, Сингапур, Таиланд, США, Англию, Австралию, Канаду и Новую Зеландию. Рядом — загранпаспорт, справка о несудимости, страховка и брони.</p></div>
+        </details>
+        <details class="article-faq__item">
+          <summary class="article-faq__q"><span class="article-faq__q-text">Где смотреть цену, если в каталоге её нет?</span><span class="article-faq__icon" aria-hidden="true"></span></summary>
+          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">На странице услуги, в блоке «Стоимость». У каждой страны свой тариф и свой ответ, входит ли сбор.</p></div>
+        </details>
+        <details class="article-faq__item">
+          <summary class="article-faq__q"><span class="article-faq__q-text">Можно ли начать визу без загранпаспорта?</span><span class="article-faq__icon" aria-hidden="true"></span></summary>
+          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Нет. Сначала паспорт, если его нет, он кончается раньше поездки или нет чистых страниц. Иначе комплект некуда ставить.</p></div>
+        </details>
+        <details class="article-faq__item">
+          <summary class="article-faq__q"><span class="article-faq__q-text">Вы гарантируете одобрение визы?</span><span class="article-faq__icon" aria-hidden="true"></span></summary>
+          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Нет. Визу выдаёт консульство, паспорт — ведомство, карту для поездки — банк. Мы готовим документы и фиксируем цену своей работы.</p></div>
+        </details>
+        <details class="article-faq__item">
+          <summary class="article-faq__q"><span class="article-faq__q-text">Можно ли подать документы из другого города?</span><span class="article-faq__icon" aria-hidden="true"></span></summary>
+          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Анкету принимаем удалённо. Офис в Москве: Большая Полянка 42, строение 1, 4 этаж, офис 426, будни 10:00–18:00, телефон +7 (495) 662-98-99.</p></div>
+        </details>
+        <details class="article-faq__item">
+          <summary class="article-faq__q"><span class="article-faq__q-text">Что подготовить до звонка?</span><span class="article-faq__icon" aria-hidden="true"></span></summary>
+          <div class="article-faq__body"><p class="max-w-2xl text-[17px] font-medium leading-relaxed text-gray-600">Страну, цель и даты. По ним видно, нужен ли сначала паспорт и какой комплект собирать. Без дат бронь и страховку не считаем.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <footer class="bg-[#0a0a0a] px-6 py-12 text-gray-400 lg:px-12">
     <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4">
       <a href="index.html" class="font-serif text-3xl text-white">Виза тут</a>
@@ -409,13 +511,56 @@
     const catalogLinks = [...document.querySelectorAll('.catalog-nav a')];
     const catalogSections = catalogLinks.map((a) => document.querySelector(a.getAttribute('href'))).filter(Boolean);
     const markCatalog = () => {
-      const line = window.scrollY + 140;
+      const y = window.innerHeight * 0.33;
       let current = catalogSections[0];
-      catalogSections.forEach((section) => { if (section.offsetTop <= line) current = section; });
+      catalogSections.forEach((section) => {
+        const box = section.getBoundingClientRect();
+        if (box.top <= y && box.bottom > y) current = section;
+      });
       catalogLinks.forEach((a) => a.classList.toggle('is-on', current && a.getAttribute('href') === '#' + current.id));
     };
     markCatalog();
     document.addEventListener('scroll', markCatalog, { passive: true });
 </script>
+
+<script>
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const faqItems = [...document.querySelectorAll('.article-faq__item')];
+    const closeFaq = (el) => {
+      const body = el.querySelector('.article-faq__body');
+      if (!el.open) return;
+      const step = String(Date.now());
+      body.dataset.step = step;
+      if (reduceMotion) { el.open = false; body.style.height = '0px'; return; }
+      body.style.height = body.scrollHeight + 'px';
+      requestAnimationFrame(() => { body.style.height = '0px'; });
+      body.addEventListener('transitionend', function onEnd(ev) {
+        if (ev.propertyName !== 'height' || body.dataset.step !== step) return;
+        body.removeEventListener('transitionend', onEnd);
+        el.open = false;
+      });
+    };
+    faqItems.forEach((item) => {
+      const summary = item.querySelector('summary');
+      const body = item.querySelector('.article-faq__body');
+      summary.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (item.open) { closeFaq(item); return; }
+        faqItems.forEach((other) => { if (other !== item) closeFaq(other); });
+        item.open = true;
+        if (reduceMotion) { body.style.height = 'auto'; return; }
+        const step = String(Date.now());
+        body.dataset.step = step;
+        body.style.height = '0px';
+        requestAnimationFrame(() => { body.style.height = body.scrollHeight + 'px'; });
+        body.addEventListener('transitionend', function onEnd(ev) {
+          if (ev.propertyName !== 'height' || body.dataset.step !== step) return;
+          body.removeEventListener('transitionend', onEnd);
+          if (item.open) body.style.height = 'auto';
+        });
+      });
+    });
+</script>
+
 </body>
 </html>
