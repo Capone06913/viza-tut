@@ -2,21 +2,39 @@
   var video = document.getElementById("hero-video");
   if (!video || !video.dataset.src) return;
 
-  var source = document.createElement("source");
-  source.src = video.dataset.src;
-  source.type = "video/mp4";
-  video.appendChild(source);
-
   var still = video.parentElement && video.parentElement.querySelector(".hero-still");
-  video.addEventListener("playing", function () {
+
+  function reveal() {
     if (still) still.style.opacity = "0";
+  }
+
+  video.muted = true;
+  video.defaultMuted = true;
+  video.playsInline = true;
+  video.setAttribute("muted", "");
+  video.setAttribute("playsinline", "");
+  video.setAttribute("webkit-playsinline", "");
+  video.autoplay = true;
+  video.preload = "auto";
+  video.src = video.dataset.src;
+
+  video.addEventListener("playing", reveal);
+  video.addEventListener("timeupdate", function () {
+    if (video.currentTime > 0) reveal();
   });
 
-  var start = function () {
+  function start() {
     var play = video.play();
     if (play && play.catch) play.catch(function () {});
-  };
-  if (video.readyState >= 2) start();
-  else video.addEventListener("canplay", start, { once: true });
-  video.load();
+  }
+
+  start();
+  video.addEventListener("loadeddata", start);
+  video.addEventListener("canplay", start);
+
+  function kick() {
+    if (video.paused) start();
+  }
+  document.addEventListener("touchstart", kick, { passive: true });
+  document.addEventListener("click", kick);
 })();
