@@ -65,7 +65,7 @@
     {
       "file": "blog.html",
       "path": "blog.html",
-      "index": true,
+      "index": false,
       "title": "Блог: документы и загранпаспорт — Виза тут",
       "changefreq": "weekly",
       "priority": "0.7",
@@ -394,7 +394,7 @@
     {
       "file": "blog-kitay-bez-vizy-2027.html",
       "path": "blog-kitay-bez-vizy-2027.html",
-      "index": true,
+      "index": false,
       "title": "Нужна ли виза в Китай до 31 декабря 2027 — Виза тут",
       "changefreq": "monthly",
       "priority": "0.7",
@@ -404,7 +404,7 @@
     {
       "file": "blog-zagran-rebenku.html",
       "path": "blog-zagran-rebenku.html",
-      "index": true,
+      "index": false,
       "title": "Какие документы собрать на загранпаспорт ребёнку — Виза тут",
       "changefreq": "monthly",
       "priority": "0.7",
@@ -414,7 +414,7 @@
     {
       "file": "blog-dokumenty-na-shengen.html",
       "path": "blog-dokumenty-na-shengen.html",
-      "index": true,
+      "index": false,
       "title": "Какие документы нужны на шенгенскую визу — Виза тут",
       "changefreq": "monthly",
       "priority": "0.7",
@@ -424,7 +424,7 @@
     {
       "file": "blog-zagranpasport-pered-podachey.html",
       "path": "blog-zagranpasport-pered-podachey.html",
-      "index": true,
+      "index": false,
       "title": "Загранпаспорт перед подачей на визу — Виза тут",
       "changefreq": "monthly",
       "priority": "0.7",
