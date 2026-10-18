@@ -53,13 +53,14 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=PT+Serif:wght@700&family=Unbounded:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Manrope:wght@500;600;700&family=PT+Serif:wght@700&family=Unbounded:wght@700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = { theme: { extend: { fontFamily: { serif: ['"PT Serif"', 'serif'], sans: ['Manrope', 'sans-serif'], display: ['Unbounded', 'sans-serif'] }, colors: { gold: { DEFAULT: '#C5A880', dark: '#A3865D' }, dark: '#111111' } } } }
   </script>
   <style>
     body { background:#FCFCFA; color:#111; -webkit-font-smoothing:antialiased; }
+    .step-num { font-family:"Cormorant Garamond",Georgia,serif; font-style:italic; font-weight:500; font-size:64px; line-height:.8; letter-spacing:.02em; }
     .btn-gold { background:linear-gradient(135deg,#C5A880,#A3865D); color:#fff; }
     .input-premium { width:100%; background:transparent; border:0; border-bottom:1px solid rgba(17,17,17,.28); padding:12px 0; }
     .input-premium:focus { outline:none; border-bottom-color:#C5A880; }
@@ -198,28 +199,28 @@
       </div>
       <div class="mt-12 grid gap-3 lg:grid-cols-2">
         <article class="flex min-h-[280px] flex-col justify-between rounded-3xl border border-[#eadfce] bg-[#f8f4ee] p-8 lg:p-10">
-          <span class="font-display text-[15px] font-bold text-gold-dark">01</span>
+          <span class="step-num text-gold-dark">01</span>
           <div class="mt-16">
             <h3 class="font-display text-[32px] font-bold leading-[1.1] tracking-[-0.03em] sm:text-[40px]">Слушаем цель</h3>
             <p class="mt-4 max-w-md text-[16px] font-medium leading-relaxed text-gray-600">Работа, учёба, переезд или семья. Страна и даты. От этого список, а не от страны на вывеске.</p>
           </div>
         </article>
         <article class="flex min-h-[280px] flex-col justify-between rounded-3xl border border-[#e0d0b8] bg-[#f1e6d6] p-8 lg:p-10">
-          <span class="font-display text-[15px] font-bold text-gold-dark">02</span>
+          <span class="step-num text-gold-dark">02</span>
           <div class="mt-16">
             <h3 class="font-display text-[32px] font-bold leading-[1.1] tracking-[-0.03em] sm:text-[40px]">Проверяем паспорт</h3>
             <p class="mt-4 max-w-md text-[16px] font-medium leading-relaxed text-gray-600">Нет документа, кончается раньше поездки, нет чистых страниц — сначала загранпаспорт, потом виза.</p>
           </div>
         </article>
         <article class="flex min-h-[280px] flex-col justify-between rounded-3xl border border-[#d4c4a8] bg-[#e7d8c4] p-8 lg:p-10">
-          <span class="font-display text-[15px] font-bold text-gold-dark">03</span>
+          <span class="step-num text-gold-dark">03</span>
           <div class="mt-16">
             <h3 class="font-display text-[32px] font-bold leading-[1.1] tracking-[-0.03em] sm:text-[40px]">Собираем и подаём</h3>
             <p class="mt-4 max-w-md text-[16px] font-medium leading-relaxed text-gray-600">Анкета наша. Вы приносите справки со своей стороны. Запись на живую дату на сайте не продаём.</p>
           </div>
         </article>
         <article class="flex min-h-[280px] flex-col justify-between rounded-3xl bg-[#121110] p-8 text-white lg:p-10">
-          <span class="font-display text-[15px] font-bold text-gold">04</span>
+          <span class="step-num text-gold">04</span>
           <div class="mt-16">
             <h3 class="font-display text-[32px] font-bold leading-[1.1] tracking-[-0.03em] sm:text-[40px]">Пишем договор</h3>
             <p class="mt-4 max-w-md text-[16px] font-medium leading-relaxed text-white/75">Цена услуги и срок нашей работы. Если сбор идёт отдельно, это написано до оплаты. Одобрение визы в договор не входит.</p>
@@ -237,22 +238,22 @@
       </div>
       <div class="mt-12 grid gap-3 md:grid-cols-2">
         <article class="rounded-3xl border border-white/10 bg-white/[0.04] p-8">
-          <p class="font-display text-[15px] font-bold text-gold">01</p>
+          <p class="step-num text-gold">01</p>
           <h3 class="mt-8 font-display text-[28px] font-bold leading-[1.1] tracking-[-0.03em]">Цена не меняется</h3>
           <p class="mt-4 text-[16px] font-medium leading-relaxed text-white/75">Сумму услуги фиксируем в договоре. Если сбор или пошлина идут отдельно, это называем до оплаты, а не после.</p>
         </article>
         <article class="rounded-3xl border border-white/10 bg-white/[0.04] p-8">
-          <p class="font-display text-[15px] font-bold text-gold">02</p>
+          <p class="step-num text-gold">02</p>
           <h3 class="mt-8 font-display text-[28px] font-bold leading-[1.1] tracking-[-0.03em]">Срок наш записан</h3>
           <p class="mt-4 text-[16px] font-medium leading-relaxed text-white/75">Срок нашей работы стоит в договоре. Если задержка по нашей вине, возвращаем оплату услуги. Срок консульства туда не пишем.</p>
         </article>
         <article class="rounded-3xl border border-white/10 bg-white/[0.04] p-8">
-          <p class="font-display text-[15px] font-bold text-gold">03</p>
+          <p class="step-num text-gold">03</p>
           <h3 class="mt-8 font-display text-[28px] font-bold leading-[1.1] tracking-[-0.03em]">Слабое место до записи</h3>
           <p class="mt-4 text-[16px] font-medium leading-relaxed text-white/75">Паспорт, справка или анкета не проходят — говорим до записи, а не в день подачи.</p>
         </article>
         <article class="rounded-3xl border border-white/10 bg-white/[0.04] p-8">
-          <p class="font-display text-[15px] font-bold text-gold">04</p>
+          <p class="step-num text-gold">04</p>
           <h3 class="mt-8 font-display text-[28px] font-bold leading-[1.1] tracking-[-0.03em]">Документы возвращаем</h3>
           <p class="mt-4 text-[16px] font-medium leading-relaxed text-white/75">Паспорт и оригиналы забираете в офисе или курьером. Анкету принимаем и из другого города.</p>
         </article>
