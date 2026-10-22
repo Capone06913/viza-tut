@@ -16,7 +16,8 @@
   video.setAttribute("webkit-playsinline", "");
   video.autoplay = true;
   video.preload = "auto";
-  video.src = video.dataset.src;
+  var narrow = window.matchMedia("(max-width: 1023px)").matches;
+  video.src = narrow && video.dataset.srcMobile ? video.dataset.srcMobile : video.dataset.src;
 
   video.addEventListener("playing", reveal);
   video.addEventListener("timeupdate", function () {
